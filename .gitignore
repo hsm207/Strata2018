@@ -13,3 +13,10 @@
 
 .Rhistory
 
+.Rproj.user
+
+.ipynb_checkpoints
+aggression_data.csv
+toxicity_data.csv
+.Rdata
+*.Rproj
