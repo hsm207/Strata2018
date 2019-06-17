@@ -1,56 +1,16 @@
+# Introduction
 
-# Strata 2018 Tutorial on Using R and Python for Scalable Data Science, Machine Learning, and AI
+This repository contains code to reproduce the results described in my [How To Use Active Learning To Iteratively Improve Your Machine Learning Models](https://medium.com/towards-artificial-intelligence/how-to-use-active-learning-to-iteratively-improve-your-machine-learning-models-1c6164bdab99)
+blog post. It borrows heavily from [this](https://github.com/Azure/Strata2018) repo.
 
-## Instructions
+# Prerequisites
 
-Provision a CentOS Linux Data Science Virtual Machine; the size "Standard_DS12_v2" works well:
-https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoft-ads.linux-data-science-vm?tab=Overview
+* [Microsoft Machine Learning Server](https://www.microsoft.com/en-us/sql-server/machinelearningserver) to run the R code
+* A [Databricks cluster] to run the [notebook](/text_classification/Word2Vec-pySpark-attack-comments-updated.ipynb) that creates the word embeddings (optional)
 
-Log in to JupyterHub by pointing your web browser to https://hostname:8000 (be sure to use https, not http, and replace "hostname" with the hostname or IP address of your virtual machine). Please disgregard warnings about certificate errors.
+# Usage
+Have a look at the [1_wiki_detox_active_learning_workshop](/text_classification/1_wiki_detox_active_learning_workshop.Rmd) notebook to reproduce all the results reported
+in the blog post.
 
-Open a bash terminal window in JupyterHub by clicking the New button and then clicking Terminal.
-
-In the terminal, run these four commands:
-
-```bash
-cd ~/notebooks
-
-git clone https://github.com/Azure/Strata2018
-
-cd Strata2018
-
-source startup.sh
-```
-
-You can now log in to RStudio Server at http://hostname:8787 (unlike JupyterHub, be sure to use http, not https).
-
-
-## Abstract
-
-Accessed via R and Python APIs, pre-trained Deep Learning models and Transfer Learning are making custom Image Classification with large or small amounts of labeled data easily accessible to data scientists and application developers. This tutorial walks you through creating end-to-end data science solutions in R and Python on virtual machines, Spark environments, and cloud-based infrastructure and consuming them in production. This tutorial covers strategies and best practices for porting and interoperating between R and Python, with a novel Deep Learning use case for Image Classification as an example use case.
-
-The tutorial materials and the scripts that are used to create the virtual machines configured as single-node Spark clusters are published in this GitHub repository, so you’ll be able to create environments identical to the ones you use in the tutorial by running the scripts  after the tutorial session completes.
-
-Outline:
-
-1.	What limits the scalability of R and Python scripts?
-2.	What functions and techniques can be used to overcome those limits?
-3.	Hands-on, end-to-end Deep Learning-based Image Classification example in R and Python using functions that scale from single nodes to distributed computing clusters
-    1.	Data exploration and wrangling
-    2.	Featurization and Modeling
-    3.	Deployment and Consumption
-    4.	Scaling with distributed computing
-
-## Contributing
-
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
-
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+# Contributing
+Feel free to raise a pull request if you have any questions, feedback, suggestions, etc.
