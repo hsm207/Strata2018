@@ -6,7 +6,7 @@ blog post. It borrows heavily from [this](https://github.com/Azure/Strata2018) r
 # Prerequisites
 
 * [Microsoft Machine Learning Server](https://www.microsoft.com/en-us/sql-server/machinelearningserver) to run the R code
-* A [Databricks cluster] to run the [notebook](/text_classification/Word2Vec-pySpark-attack-comments-updated.ipynb) that creates the word embeddings (optional)
+* A [Databricks cluster](https://databricks.com/) to run the [notebook](/text_classification/Word2Vec-pySpark-attack-comments-updated.ipynb) that creates the word embeddings (optional)
 
 # Usage
 Have a look at the [1_wiki_detox_active_learning_workshop](/text_classification/1_wiki_detox_active_learning_workshop.Rmd) notebook to reproduce all the results reported
